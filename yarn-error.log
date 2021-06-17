@@ -1,0 +1,74 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/local/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/gustavo/Workspaces/ignite-aulas/reactjs/desafio01-conceitos-do-react/package.json: Unexpected token } in JSON at position 1062
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "01-github-explorer",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "webpack serve",
+      "build": "cross-env NODE_ENV=production webpack",
+      "test": "jest --watchAll"
+    },
+    "dependencies": {
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-icons": "^4.2.0"
+    },
+    "devDependencies": {
+      "@babel/cli": "",
+      "@babel/core": "",
+      "@babel/preset-env": "",
+      "@babel/preset-react": "",
+      "@babel/preset-typescript": "",
+      "@pmmmwh/react-refresh-webpack-plugin": "",
+      "@testing-library/jest-dom": "",
+      "@testing-library/react": "",
+      "@types/react-dom": "",
+      "babel-loader": "",
+      "babel-preset-react-app": "",
+      "cross-env": "",
+      "css-loader": "",
+      "html-webpack-plugin": "",
+      "identity-obj-proxy": "",
+      "jest": "",
+      "node-sass": "",
+      "react-app-polyfill": "",
+      "react-refresh": "",
+      "sass-loader": "",
+      "style-loader": "",
+      "ts-node": "",
+      "typescript": "",
+      "webpack": "",
+      "webpack-cli": "",
+      "webpack-dev-server": "",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
