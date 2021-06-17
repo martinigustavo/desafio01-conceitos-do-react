@@ -18,7 +18,8 @@ export function TaskList() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
     const randomNumber = Math.floor((Math.random() * 100) + 1) + Math.floor((Math.random() * 100) + 1);
 
-    const title = (document.getElementById('title-input') as HTMLInputElement).value;
+    // const title = (document.getElementById('title-input') as HTMLInputElement).value;
+    const title = newTaskTitle;
     
     if (title.trim() === "") return;
 
@@ -57,7 +58,6 @@ export function TaskList() {
 
         <div className="input-group">
           <input
-            id="title-input"
             type="text" 
             placeholder="Adicionar novo todo" 
             onChange={(e) => setNewTaskTitle(e.target.value)}
